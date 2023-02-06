@@ -262,7 +262,75 @@ main section .underline span{
 main section:last-child{
     padding-bottom: 90px; /* margen entre el foter y las secciones*/
 }
+
+/* inicio ourservices */
+
+/* display grid explicacion */
+
+main #ourservices .grid{
+    display: grid;
+    grid-column: 1fr;
+    gap: var(--margingrid);
+}
+
+main #ourservices article{
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #ourservices article i:not(.fa-long-arrow-alt-right){
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    display: inline-block;
+    padding: 0.5em;
+}
+
+main #ourservices h3{
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+main #ourservices p{
+    color: #777;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+.fa-truck{
+    transform: rotateY(180deg);
+}
+
+/* fin ourservices */
+
 /* mediaqueries */
+
+/* 600px */
+
+@media (min-width: 37.500em){
+    main #ourservices .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main #ourservices article:last-child{
+        grid-column: 1/3;
+    }
+
+    main #ourservives article{
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+    }
+}
+
+/* 768px */
 
 @media(min-width: 48.000em){
     
@@ -271,11 +339,22 @@ main section:last-child{
         font-size: 110%;
     }
 
+    /* queda pendiente ajustar los margenes del nav-top*/
+
     footer{
         text-align: left;
     }
-    
+
+    main #ourservices .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main #ourservices article:last-child{
+        grid-column: 3/4;
+    }
 }
+
+/* 1004px */
 
 @media(min-width: 62.750em){
     header .hamburguesa{
