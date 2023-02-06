@@ -223,6 +223,45 @@ footer a:hover{
 
 /* fin hero */
 
+main section{
+    padding: 2.188em 1.5em;
+}
+
+main section h2{
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color: var(--colorprincipal);
+}
+
+main section .underline{
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin-bottom: var(--margingrid);
+}
+
+main section .underline hr{
+    border-color: var(--colorprincipal);
+    position: absolute;
+    width: 100%;
+}
+
+main section .underline span{
+    text-align: center;
+    display: block;
+    top: -1px;
+}
+
+main section:last-child{
+    padding-bottom: 90px; /* margen entre el foter y las secciones*/
+}
 /* mediaqueries */
 
 @media(min-width: 48.000em){
