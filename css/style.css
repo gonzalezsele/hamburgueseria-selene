@@ -309,6 +309,7 @@ main #ourservices p{
     color: var(--colorprincipal);
     font-weight: 700;
 }
+
 .fa-truck{
     transform: rotateY(180deg);
 }
@@ -336,10 +337,9 @@ main #aboutus h4{
 }
 
 main section  p{
-     color: #777;
+    color: #777;
     line-height: 1.25em
 }
-
 
 main #aboutus .marco{
     border: 3px solid var(--colorprincipal);
@@ -351,22 +351,59 @@ main #aboutus .marco{
 
 main #aboutus .marco img{
     transform: rotateZ(-10deg);
-      transition: 1s;
+    transition: 1s;
 }
 
 main #aboutus figure:hover :is(.marco, img){
     transform: rotateZ(0deg);
 }
 
-
-
-
-
-
-
 /* final aboutus */
 
+/* inicio ourblogs */
 
+main .gridblog figure{
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* main .gridblog{
+    display: flex;
+    margin-top: -60px;
+    padding: 15px;
+    gap: var(--margingrid);
+} */
+
+main .gridblog {
+	grid-template-columns: repeat(3, 1fr);
+    gap: var(--margingrid);
+}
+
+main .gridblog h3{
+    margin: 1em 0;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main .gridblog h4{
+    margin: 1em 0;
+    font-weight: 700;
+    color: var(--colorprincipal)
+}
+
+main .gridblog p{
+    color: #777;
+    line-height: 1.25em;
+}
+
+main .gridblog .readmore{
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+
+/* final ourblogs */
 
 
 /* mediaqueries */
@@ -391,7 +428,6 @@ main #aboutus figure:hover :is(.marco, img){
       main #aboutus .flex{
         flex-direction: row;
       }
-
 
 }
 
