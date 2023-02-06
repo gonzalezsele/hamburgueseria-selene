@@ -310,10 +310,53 @@ main #ourservices p{
 
 /* fin ourservices */
 
+/* inicio aboutus */
+
+main #aboutus .flex{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margingrid);
+}
+
+main #aboutus h3{
+    font-weight: 700;
+    font-size: 110%;
+    gap: var(--margingrid);
+}
+
+main #aboutus h4{
+    margin: 1em 0;
+    color: var(--colorprincipal);
+}
+
+main section p{
+    color: #777;
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+main #aboutus .marco{
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    width: 95%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+main #aboutus .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus figure:hover :is(.marco, img){
+    transform: rotateZ(0deg);
+}
+
+/* fin aboutus */
+
 /* mediaqueries */
 
 /* 600px */
-
 @media (min-width: 37.500em){
     main #ourservices .grid{
         grid-template-columns: repeat(2, 1fr);
@@ -328,10 +371,15 @@ main #ourservices p{
         border-left: 1px solid #aaa;
         padding: 1.5em;
     }
+
+    main #aboutus .flex{
+        display: flex;
+        flex-direction: column;
+        gap: var(--margingrid);
+    }
 }
 
 /* 768px */
-
 @media(min-width: 48.000em){
     
     header .nav-top a span{
@@ -355,7 +403,6 @@ main #ourservices p{
 }
 
 /* 1004px */
-
 @media(min-width: 62.750em){
     header .hamburguesa{
         display: none;
