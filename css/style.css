@@ -314,7 +314,6 @@ main #ourservices p{
     transform: rotateY(180deg);
 }
 
-
 /* final ourservices */
 
 
@@ -360,50 +359,64 @@ main #aboutus figure:hover :is(.marco, img){
 
 /* final aboutus */
 
-/* inicio ourblogs */
+/* inicio ourblog */
 
-main .gridblog figure{
-    width: 400px;
-    margin: 0 auto;
-}
-
-/* main .gridblog{
+main #ourblog .flexblog{
     display: flex;
-    margin-top: -60px;
-    padding: 15px;
-    gap: var(--margingrid);
-} */
-
-main .gridblog {
-	grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
     gap: var(--margingrid);
 }
 
-main .gridblog h3{
-    margin: 1em 0;
-    font-weight: 700;
+main #ourblog h3{
+    font-family: var(--fuenteprincipal);
+    font-weight: 400;
     font-size: 110%;
+    margin: 10px 0;
 }
 
-main .gridblog h4{
+main #ourblog h4{
     margin: 1em 0;
     font-weight: 700;
+    font-size: small;
     color: var(--colorprincipal)
 }
 
-main .gridblog p{
+main section p{
     color: #777;
     line-height: 1.25em;
+    font-size: small;
+    margin-bottom: 0.5em;
+    font-weight: 400;
 }
 
-main .gridblog .readmore{
-    text-decoration: none;
+main .readmore{
     color: var(--colorprincipal);
+    text-decoration: none;
+    font-size: small;
     font-weight: 700;
 }
 
+main section p:last-child{
+    color: white;
+    margin: 15px 0px;
+}
 
-/* final ourblogs */
+main .fecha {
+    background-color: var(--colorprincipal);
+    color: white;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    opacity: 0.8;
+    padding: 15px 10px;
+    position: absolute;
+}
+
+/* **mejorar cambio de eje** */
+
+
+/* final ourblog */
 
 
 /* mediaqueries */
