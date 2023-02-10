@@ -367,6 +367,13 @@ main #ourblog .flexblog{
     gap: var(--margingrid);
 }
 
+main #ourblog article{
+    width: calc(50% - var(--margingrid));
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
 main #ourblog h3{
     font-family: var(--fuenteprincipal);
     font-weight: 400;
@@ -404,16 +411,18 @@ main section p:last-child{
 main .fecha {
     background-color: var(--colorprincipal);
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     width: 60px;
     height: 60px;
     text-align: center;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 15px 10px;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* **mejorar cambio de eje** */
+/* mejorar cambio eje */ 
 
 
 /* final ourblog */
@@ -442,6 +451,10 @@ main .fecha {
         flex-direction: row;
       }
 
+      main #ourblog article{
+        width: calc(33.333% - var(--margingrid));
+    }
+
 }
 
 /* 768px */
@@ -451,8 +464,6 @@ main .fecha {
          display: inline;
          font-size: 110%;
     }
-
-    /*queda pendiente ajustar los margenes del nav-top*/
 
     header .nav-top .container{
         justify-content: space-between;
