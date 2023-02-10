@@ -114,7 +114,6 @@ header .menu a:hover{
     color: var(--colorprincipal);
 }
 
-
 header .menu li:last-child a{
     border-bottom: 0px;
 }
@@ -122,7 +121,6 @@ header .menu li:last-child a{
 header .menu .activo{
     color:var(--colorprincipal);
 }
-
 
 /* final header */
 
@@ -422,10 +420,105 @@ main .fecha {
     left: 0;
 }
 
-/* mejorar cambio eje */ 
-
-
 /* final ourblog */
+
+/* inicio menu */
+
+main #menu{
+    background-color: var(--colorsecundario);
+}
+
+main #menu h2{
+    color: white;
+}
+
+main .todaysmenu .activo{
+    background-color: var(--colorprincipal);
+    margin: var(--margingrid) 0;
+    border-radius: 5px;
+}
+
+main .todaysmenu a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height : 25px;
+}
+
+main .todaysmenu a i{
+    font-size: 150%;
+}
+
+/*
+main #menu .flexmenu{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--margingrid);
+} */
+
+main #menu article{
+    width: calc(50% - var(--margingrid));
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+
+main #menu h3{
+    font-family: var(--fuenteprincipal);
+    color: white;
+    font-weight: 700;
+    font-size: 110%;
+    margin: 10px 0;
+}
+
+main #menu .underlinemenu{
+    position: relative;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight:700;
+    margin-bottom: var(--margingrid);    
+}
+
+main #menu .underlinemenu hr{
+    border-color: var(--colorprincipal);
+    position: absolute;
+    width: 5%;
+    top: -1px;
+}
+
+main #menu figcaption{
+    font-family: var(--fuenteprincipal);
+    color: white;
+    font-weight: 700;
+    font-size: 110%;
+    margin: 10px 0;
+}
+
+main #menu section p{
+    color: #dcdcdc;
+    line-height: 1.25em;
+    font-size: 400;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+main .ordernow{
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-size: small;
+    font-weight: 700;
+}
+
+main .precio{
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+/* final menu */
 
 
 /* mediaqueries */
@@ -453,12 +546,11 @@ main .fecha {
 
       main #ourblog article{
         width: calc(33.333% - var(--margingrid));
-    }
-
+      }
 }
 
 /* 768px */
-@media(min-width: 48.000em ){
+@media(min-width: 48.000em){
 
     header .nav-top a span{
          display: inline;
@@ -480,7 +572,6 @@ main .fecha {
      main #ourservices article:last-child{
         grid-column: 3/4;
       }
-
 
 }
 
