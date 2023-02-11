@@ -432,32 +432,45 @@ main #menu h2{
     color: white;
 }
 
-main .todaysmenu .activo{
-    background-color: var(--colorprincipal);
-    margin: var(--margingrid) 0;
-    border-radius: 5px;
+main .nav{
+    width: 100%;
+    padding: 1em;
 }
 
-main .todaysmenu a{
+main .nav a{
+    display: block;
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-weight: 400;
-    line-height : 25px;
+    padding: 10px;
+    transition: all 0.3s;
 }
 
-main .todaysmenu a i{
-    font-size: 150%;
+main .nav .activo{
+    background-color: var(--colorprincipal);
+    border-radius: 5px;
+}
+
+main .nav a:hover{
+    background-color: var(--colorprincipal);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .ul{
+    display: flex;
+    flex-direction: column;
 }
 
 /*
+
 main #menu .flexmenu{ 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: var(--margingrid);
-} */
+} 
 
 main #menu article{
     width: calc(50% - var(--margingrid));
@@ -466,6 +479,7 @@ main #menu article{
     right: 0;
 }
 
+*/
 
 main #menu h3{
     font-family: var(--fuenteprincipal);
@@ -476,8 +490,6 @@ main #menu h3{
 }
 
 main #menu .underlinemenu{
-    position: relative;
-    margin: 0 auto;
     color: var(--colorprincipal);
     font-weight:700;
     margin-bottom: var(--margingrid);    
@@ -485,9 +497,9 @@ main #menu .underlinemenu{
 
 main #menu .underlinemenu hr{
     border-color: var(--colorprincipal);
-    position: absolute;
     width: 5%;
     top: -1px;
+    margin: 0;
 }
 
 main #menu figcaption{
@@ -496,6 +508,11 @@ main #menu figcaption{
     font-weight: 700;
     font-size: 110%;
     margin: 10px 0;
+}
+
+main .precio{
+    color: var(--colorprincipal);
+    font-weight: 700;
 }
 
 main #menu section p{
@@ -510,11 +527,6 @@ main .ordernow{
     color: var(--colorprincipal);
     text-decoration: none;
     font-size: small;
-    font-weight: 700;
-}
-
-main .precio{
-    color: var(--colorprincipal);
     font-weight: 700;
 }
 
