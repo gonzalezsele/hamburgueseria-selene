@@ -114,7 +114,6 @@ header .menu a:hover{
     color: var(--colorprincipal);
 }
 
-
 header .menu li:last-child a{
     border-bottom: 0px;
 }
@@ -122,7 +121,6 @@ header .menu li:last-child a{
 header .menu .activo{
     color:var(--colorprincipal);
 }
-
 
 /* final header */
 
@@ -408,7 +406,7 @@ main section p:last-child{
     margin: 15px 0px;
 }
 
-main .fecha {
+main .fecha{
     background-color: var(--colorprincipal);
     color: white;
     font-weight: 700;
@@ -422,10 +420,97 @@ main .fecha {
     left: 0;
 }
 
-/* mejorar cambio eje */ 
-
-
 /* final ourblog */
+
+/* inicio menu */
+
+#menu{
+    background-color: var(--colorsecundario);
+}
+
+#menu .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#menu h2{
+    color: white;
+}
+
+#menu .flex .column1{
+    width: calc(100% - 10px);
+}
+
+#menu .flex .column2{
+    width: calc(100% - 10px);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .flex .column1 a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+#menu .flex .column1 .activo{
+    background-color: var(--colorprincipal);
+    border-radius: 5px;
+}
+
+#menu .flex .column1 a:hover{
+    background-color: var(--colorprincipal);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu h3{
+    font-family: var(--fuenteprincipal);
+    color: white;
+    font-weight: 700;
+    font-size: 110%;
+    margin: 10px 0;
+}
+
+#menu .precio{
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+#menu .underlinemenu{
+    color: var(--colorprincipal);
+    font-weight:700;
+    margin-bottom: var(--margingrid);    
+}
+
+#menu .underlinemenu hr{
+    border-color: var(--colorprincipal);
+    width: 5%;
+    top: -1px;
+    margin: 0;
+}
+
+#menu section p{
+    color: #dcdcdc;
+    line-height: 1.25em;
+    font-size: 400;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+}
+
+main .ordernow{
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-size: small;
+    font-weight: 700;
+}
+
+/* final menu */
 
 
 /* mediaqueries */
@@ -453,12 +538,11 @@ main .fecha {
 
       main #ourblog article{
         width: calc(33.333% - var(--margingrid));
-    }
-
+      }
 }
 
 /* 768px */
-@media(min-width: 48.000em ){
+@media(min-width: 48.000em){
 
     header .nav-top a span{
          display: inline;
@@ -481,6 +565,17 @@ main .fecha {
         grid-column: 3/4;
       }
 
+      #menu .flex .column1{
+        width: calc(30% - 10px);
+    }
+
+    #menu .flex .column2{
+        width: calc(70% - 10px);
+    }
+
+     #menu .column2 article{
+        flex-direction: row;
+    }
 
 }
 
