@@ -406,7 +406,7 @@ main section p:last-child{
     margin: 15px 0px;
 }
 
-main .fecha {
+main .fecha{
     background-color: var(--colorprincipal);
     color: white;
     font-weight: 700;
@@ -424,20 +424,32 @@ main .fecha {
 
 /* inicio menu */
 
-main #menu{
+#menu{
     background-color: var(--colorsecundario);
 }
 
-main #menu h2{
+#menu .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#menu h2{
     color: white;
 }
 
-main .nav{
-    width: 100%;
-    padding: 1em;
+#menu .flex .column1{
+    width: calc(100% - 10px);
 }
 
-main .nav a{
+#menu .flex .column2{
+    width: calc(100% - 10px);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu .flex .column1 a{
     display: block;
     text-decoration: none;
     color: white;
@@ -446,42 +458,18 @@ main .nav a{
     transition: all 0.3s;
 }
 
-main .nav .activo{
+#menu .flex .column1 .activo{
     background-color: var(--colorprincipal);
     border-radius: 5px;
 }
 
-main .nav a:hover{
+#menu .flex .column1 a:hover{
     background-color: var(--colorprincipal);
     border-radius: 5px;
     cursor: pointer;
 }
 
-main .ul{
-    display: flex;
-    flex-direction: column;
-}
-
-/*
-
-main #menu .flexmenu{ 
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: var(--margingrid);
-} 
-
-main #menu article{
-    width: calc(50% - var(--margingrid));
-    position: relative;
-    top: 0;
-    right: 0;
-}
-
-*/
-
-main #menu h3{
+#menu h3{
     font-family: var(--fuenteprincipal);
     color: white;
     font-weight: 700;
@@ -489,33 +477,25 @@ main #menu h3{
     margin: 10px 0;
 }
 
-main #menu .underlinemenu{
+#menu .precio{
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+#menu .underlinemenu{
     color: var(--colorprincipal);
     font-weight:700;
     margin-bottom: var(--margingrid);    
 }
 
-main #menu .underlinemenu hr{
+#menu .underlinemenu hr{
     border-color: var(--colorprincipal);
     width: 5%;
     top: -1px;
     margin: 0;
 }
 
-main #menu figcaption{
-    font-family: var(--fuenteprincipal);
-    color: white;
-    font-weight: 700;
-    font-size: 110%;
-    margin: 10px 0;
-}
-
-main .precio{
-    color: var(--colorprincipal);
-    font-weight: 700;
-}
-
-main #menu section p{
+#menu section p{
     color: #dcdcdc;
     line-height: 1.25em;
     font-size: 400;
@@ -584,6 +564,18 @@ main .ordernow{
      main #ourservices article:last-child{
         grid-column: 3/4;
       }
+
+      #menu .flex .column1{
+        width: calc(30% - 10px);
+    }
+
+    #menu .flex .column2{
+        width: calc(70% - 10px);
+    }
+
+     #menu .column2 article{
+        flex-direction: row;
+    }
 
 }
 
